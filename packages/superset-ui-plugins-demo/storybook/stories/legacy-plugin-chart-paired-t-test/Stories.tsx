@@ -8,17 +8,15 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="paired-t-test"
-        chartProps={{
-          formData: {
-            groupby: ['name'],
-            liftvaluePrecision: 4,
-            metrics: ['sum__num'],
-            pvaluePrecision: 6,
-            significanceLevel: 0.05,
-          },
-          height: 400,
-          payload: { data },
-          width: 400,
+        width={400}
+        height={400}
+        payload={{ data }}
+        formData={{
+          groupby: ['name'],
+          liftvaluePrecision: 4,
+          metrics: ['sum__num'],
+          pvaluePrecision: 6,
+          significanceLevel: 0.05,
         }}
       />
     ),
