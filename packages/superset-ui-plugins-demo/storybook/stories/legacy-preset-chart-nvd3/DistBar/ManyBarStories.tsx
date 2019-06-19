@@ -1,9 +1,15 @@
 /* eslint-disable no-magic-numbers */
 import React from 'react';
 import { SuperChart } from '@superset-ui/chart';
-// import data from './data';
+import dummyDatasource from '../../shared/dummyDatasource';
 
-const data = [{ key: 'sth', values: [] }];
+const data: {
+  key: string;
+  values: {
+    x: string;
+    y: number;
+  }[];
+}[] = [{ key: 'sth', values: [] }];
 const LONG_LABEL =
   'some extremely ridiculously extremely extremely extremely ridiculously extremely extremely ridiculously extremely extremely ridiculously extremely long category';
 
@@ -19,17 +25,15 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="dist-bar"
-        chartProps={{
-          datasource: { verboseMap: {} },
-          formData: {
-            showBarValue: false,
-            showLegend: true,
-            vizType: 'dist_bar',
-            xTicksLayout: 'auto',
-          },
-          height: 800,
-          payload: { data },
-          width: 400,
+        width={400}
+        height={400}
+        datasource={dummyDatasource}
+        payload={{ data }}
+        formData={{
+          showBarValue: false,
+          showLegend: true,
+          vizType: 'dist_bar',
+          xTicksLayout: 'auto',
         }}
       />
     ),
