@@ -50,17 +50,15 @@ export default function createQueryStory({
                       <>
                         <SuperChart
                           chartType={chartType}
-                          chartProps={
-                            new ChartProps({
-                              formData: payload.formData,
-                              height: Number(height),
-                              // @TODO fix typing
-                              // all vis's now expect objects but api/v1/ returns an array
-                              payload: Array.isArray(payload.queryData)
-                                ? payload.queryData[0]
-                                : payload.queryData,
-                              width: Number(width),
-                            })
+                          width={width}
+                          height={height}
+                          formData={payload.formData}
+                          // @TODO fix typing
+                          // all vis's now expect objects but api/v1/ returns an array
+                          payload={
+                            Array.isArray(payload.queryData)
+                              ? payload.queryData[0]
+                              : payload.queryData
                           }
                         />
                         <br />
