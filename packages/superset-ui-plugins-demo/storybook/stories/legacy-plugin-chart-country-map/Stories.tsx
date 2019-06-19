@@ -10,15 +10,13 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="country-map"
-        chartProps={{
-          formData: {
-            linearColorScheme: 'schemeRdYlBu',
-            numberFormat: '.3s',
-            selectCountry: select('Country', Object.keys(countries), 'france', 'country'),
-          },
-          height: 400,
-          payload: { data },
-          width: 400,
+        width={400}
+        height={400}
+        payload={{ data }}
+        formData={{
+          linearColorScheme: 'schemeRdYlBu',
+          numberFormat: '.3s',
+          selectCountry: select('Country', Object.keys(countries!), 'france', 'country'),
         }}
       />
     ),

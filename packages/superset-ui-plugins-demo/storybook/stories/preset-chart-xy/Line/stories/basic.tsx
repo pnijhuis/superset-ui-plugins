@@ -56,9 +56,9 @@ export default [
             },
           },
         }}
-        height="400"
+        height={400}
         payload={{ data }}
-        width="400"
+        width={400}
       />,
     ],
     storyName: 'Basic',

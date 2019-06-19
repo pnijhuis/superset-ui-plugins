@@ -6,11 +6,10 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="iframe"
-        chartProps={{
-          formData: {
-            url: 'https://www.youtube.com/embed/AdSZJzb-aX8',
-          },
-          height: 400,
+        width={400}
+        height={400}
+        formData={{
+          url: 'https://www.youtube.com/embed/AdSZJzb-aX8',
         }}
       />
     ),

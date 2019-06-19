@@ -8,14 +8,12 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="horizon"
-        chartProps={{
-          formData: {
-            horizonColorScale: 'series',
-            seriesHeight: '25',
-          },
-          height: 400,
-          payload: { data },
-          width: 400,
+        width={400}
+        height={400}
+        payload={{ data }}
+        formData={{
+          horizonColorScale: 'series',
+          seriesHeight: '25',
         }}
       />
     ),

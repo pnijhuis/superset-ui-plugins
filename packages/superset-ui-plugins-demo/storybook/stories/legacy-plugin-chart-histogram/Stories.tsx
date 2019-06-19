@@ -8,18 +8,16 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="histogram"
-        chartProps={{
-          formData: {
-            colorScheme: 'd3Category10',
-            globalOpacity: 1,
-            linkLength: 15, // binCount
-            normalized: false,
-            xAxisLabel: 'Score',
-            yAxisLabel: 'Count',
-          },
-          height: 400,
-          payload: { data },
-          width: 400,
+        width={400}
+        height={400}
+        payload={{ data }}
+        formData={{
+          colorScheme: 'd3Category10',
+          globalOpacity: 1,
+          linkLength: 15, // binCount
+          normalized: false,
+          xAxisLabel: 'Score',
+          yAxisLabel: 'Count',
         }}
       />
     ),
