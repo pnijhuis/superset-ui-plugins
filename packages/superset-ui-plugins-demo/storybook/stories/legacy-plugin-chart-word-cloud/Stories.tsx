@@ -8,18 +8,16 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="word-cloud"
-        chartProps={{
-          formData: {
-            colorScheme: 'd3Category10',
-            metric: 'sum__num',
-            rotation: 'square',
-            series: 'name',
-            sizeFrom: '10',
-            sizeTo: '70',
-          },
-          height: 400,
-          payload: { data },
-          width: 400,
+        width={400}
+        height={400}
+        payload={{ data }}
+        formData={{
+          colorScheme: 'd3Category10',
+          metric: 'sum__num',
+          rotation: 'square',
+          series: 'name',
+          sizeFrom: '10',
+          sizeTo: '70',
         }}
       />
     ),

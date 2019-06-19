@@ -8,15 +8,13 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="sunburst"
-        chartProps={{
-          formData: {
-            colorScheme: 'd3Category10',
-            metric: 'sum__SP_POP_TOTL',
-            secondaryMetric: 'sum__SP_RUR_TOTL',
-          },
-          height: 400,
-          payload: { data },
-          width: 400,
+        width={400}
+        height={400}
+        payload={{ data }}
+        formData={{
+          colorScheme: 'd3Category10',
+          metric: 'sum__SP_POP_TOTL',
+          secondaryMetric: 'sum__SP_RUR_TOTL',
         }}
       />
     ),

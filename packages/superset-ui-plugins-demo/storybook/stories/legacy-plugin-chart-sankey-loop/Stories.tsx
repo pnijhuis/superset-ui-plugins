@@ -8,13 +8,11 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="sankey-loop"
-        chartProps={{
-          formData: {
-            colorScheme: 'd3Category10',
-          },
-          height: 400,
-          payload: { data },
-          width: 400,
+        width={400}
+        height={400}
+        payload={{ data }}
+        formData={{
+          colorScheme: 'd3Category10',
         }}
       />
     ),

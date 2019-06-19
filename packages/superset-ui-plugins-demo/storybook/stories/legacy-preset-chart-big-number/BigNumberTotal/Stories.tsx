@@ -8,16 +8,14 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="big-number-total"
-        chartProps={{
-          formData: {
-            metric: 'sum__num',
-            subheader: 'total female participants',
-            vizType: 'big_number_total',
-            yAxisFormat: '.3s',
-          },
-          height: 400,
-          payload: { data },
-          width: 400,
+        width={400}
+        height={400}
+        payload={{ data }}
+        formData={{
+          metric: 'sum__num',
+          subheader: 'total female participants',
+          vizType: 'big_number_total',
+          yAxisFormat: '.3s',
         }}
       />
     ),

@@ -8,16 +8,12 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="world-map"
-        chartProps={{
-          formData: {
-            maxBubbleSize: '25',
-            showBubbles: true,
-          },
-          height: 400,
-          payload: {
-            data,
-          },
-          width: 400,
+        width={400}
+        height={400}
+        payload={{ data }}
+        formData={{
+          maxBubbleSize: '25',
+          showBubbles: true,
         }}
       />
     ),

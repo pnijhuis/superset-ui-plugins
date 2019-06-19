@@ -8,17 +8,15 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="rose"
-        chartProps={{
-          formData: {
-            colorScheme: 'd3Category10',
-            dateTimeFormat: '%Y-%m-%d',
-            numberFormat: '.3s',
-            richTooltip: true,
-            roseAreaProportion: false,
-          },
-          height: 400,
-          payload: { data },
-          width: 400,
+        width={400}
+        height={400}
+        payload={{ data }}
+        formData={{
+          colorScheme: 'd3Category10',
+          dateTimeFormat: '%Y-%m-%d',
+          numberFormat: '.3s',
+          richTooltip: true,
+          roseAreaProportion: false,
         }}
       />
     ),

@@ -9,30 +9,28 @@ export default [
     renderStory: () => (
       <SuperChart
         chartType="table"
-        chartProps={{
-          datasource: {
-            columnFormats: {},
-            verboseMap: {
-              name: 'name',
-              sum__num: 'sum__num',
-            },
+        width={400}
+        height={400}
+        datasource={{
+          columnFormats: {},
+          verboseMap: {
+            name: 'name',
+            sum__num: 'sum__num',
           },
-          filters: {},
-          formData: {
-            alignPn: false,
-            colorPn: false,
-            includeSearch: false,
-            metrics: ['sum__num'],
-            orderDesc: true,
-            pageLength: 0,
-            percentMetrics: [],
-            tableFilter: false,
-            tableTimestampFormat: '%Y-%m-%d %H:%M:%S',
-            timeseriesLimitMetric: null,
-          },
-          height: 400,
-          payload: { data },
-          width: 400,
+        }}
+        filters={{}}
+        payload={{ data }}
+        formData={{
+          alignPn: false,
+          colorPn: false,
+          includeSearch: false,
+          metrics: ['sum__num'],
+          orderDesc: true,
+          pageLength: 0,
+          percentMetrics: [],
+          tableFilter: false,
+          tableTimestampFormat: '%Y-%m-%d %H:%M:%S',
+          timeseriesLimitMetric: null,
         }}
       />
     ),
