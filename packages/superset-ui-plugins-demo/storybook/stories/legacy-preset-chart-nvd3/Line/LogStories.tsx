@@ -2,7 +2,7 @@
 import React from 'react';
 import { SuperChart } from '@superset-ui/chart';
 import data from './data';
-import dummyDatasource from '../../shared/dummyDatasource';
+import dummyDatasource from '../../../shared/dummyDatasource';
 
 export default [
   {

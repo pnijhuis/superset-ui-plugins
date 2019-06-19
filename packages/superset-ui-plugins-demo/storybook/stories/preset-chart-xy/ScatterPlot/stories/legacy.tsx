@@ -3,7 +3,7 @@ import * as React from 'react';
 import { SuperChart } from '@superset-ui/chart';
 import data from '../data/legacyData';
 import { SCATTER_PLOT_PLUGIN_LEGACY_TYPE } from '../constants';
-import dummyDatasource from '../../../shared/dummyDatasource';
+import dummyDatasource from '../../../../shared/dummyDatasource';
 
 export default [
   {

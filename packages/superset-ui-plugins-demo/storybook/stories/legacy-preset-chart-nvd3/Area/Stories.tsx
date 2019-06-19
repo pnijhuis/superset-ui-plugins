@@ -1,7 +1,7 @@
 /* eslint-disable no-magic-numbers */
 import React from 'react';
 import { SuperChart } from '@superset-ui/chart';
-import dummyDatasource from '../../shared/dummyDatasource';
+import dummyDatasource from '../../../shared/dummyDatasource';
 import data from './data';
 
 export default [

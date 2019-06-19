@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { SuperChart } from '@superset-ui/chart';
 import { radios } from '@storybook/addon-knobs';
-import dummyDatasource from '../../../shared/dummyDatasource';
+import dummyDatasource from '../../../../shared/dummyDatasource';
 import data from '../data/data';
 import { SCATTER_PLOT_PLUGIN_TYPE } from '../constants';
 

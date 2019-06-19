@@ -4,7 +4,7 @@ import { SuperChart } from '@superset-ui/chart';
 import { radios } from '@storybook/addon-knobs';
 import rawData from '../data/data';
 import { LINE_PLUGIN_TYPE } from '../constants';
-import dummyDatasource from '../../../shared/dummyDatasource';
+import dummyDatasource from '../../../../shared/dummyDatasource';
 
 const MIN_TIME = new Date(Date.UTC(1980, 0, 1)).getTime();
 const MAX_TIME = new Date(Date.UTC(2000, 1, 1)).getTime();

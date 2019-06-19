@@ -4,7 +4,7 @@ import { SuperChart } from '@superset-ui/chart';
 import { radios } from '@storybook/addon-knobs';
 import data from '../data/data';
 import { SCATTER_PLOT_PLUGIN_TYPE } from '../constants';
-import dummyDatasource from '../../../shared/dummyDatasource';
+import dummyDatasource from '../../../../shared/dummyDatasource';
 
 export default [
   {
