@@ -12,8 +12,8 @@ export default [
         <pre>yAxisBounds=undefined</pre>
         <SuperChart
           chartType="line"
-          width={200}
-          height={400}
+          width={400}
+          height={200}
           datasource={dummyDatasource}
           payload={{ data }}
           formData={{
@@ -25,8 +25,8 @@ export default [
         <pre>yAxisBounds=[0, 60000]</pre>
         <SuperChart
           chartType="line"
-          width={200}
-          height={400}
+          width={400}
+          height={200}
           datasource={dummyDatasource}
           payload={{ data }}
           formData={{
@@ -39,8 +39,8 @@ export default [
         <pre>yAxisBounds=[null, 60000]</pre>
         <SuperChart
           chartType="line"
-          width={200}
-          height={400}
+          width={400}
+          height={200}
           datasource={dummyDatasource}
           payload={{ data }}
           formData={{
@@ -53,8 +53,8 @@ export default [
         <pre>yAxisBounds=[40000, null]</pre>
         <SuperChart
           chartType="line"
-          width={200}
-          height={400}
+          width={400}
+          height={200}
           datasource={dummyDatasource}
           payload={{ data }}
           formData={{
